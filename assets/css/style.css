@@ -1,0 +1,336 @@
+body 
+{
+  background-image: url("../images/starwars-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#777777;
+  font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  position: relative; 
+}
+
+.box{
+  clear: both;
+  display: block;
+  position: absolute;
+  border: none;
+  top:65px;
+  left:85px;
+  width:450px;
+  height:105px;
+  align-content: center;
+}
+
+.myHeroImg{
+  height:94px;
+  width:94px;
+  padding-right:0px;
+ }
+
+ .myEnemyImg{
+  height:94px;
+  width:94px;
+  padding-right:0px;
+ }
+
+.xbox{
+ clear: both;
+  display: block;
+  position: absolute;
+  border: none;
+  top:320px;
+  left:85px;
+  width:450px;
+  height:105px;
+  align-content: center;
+}
+
+/*.dbox{
+ clear: both;
+  display: block;
+  position: absolute;
+  border: none;
+  top:318px;
+  left:85px;
+  width:450px;
+  height:105px;
+  align-content: center;
+}*/
+
+.hero-hud-div
+{
+  border: none;
+  height:200px;
+  width:680px;
+  padding-bottom:60px;
+}
+
+.hero-div
+{
+    float: left;
+    width: 94px;
+    height: 94px;
+    margin: 6px;
+    border: 3px solid black;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.hero-div img{
+  height:94px;
+  width:94px;
+  padding-right:0px;
+ }
+
+.hero-p
+{
+  position: relative;
+  top:0;
+  left:-3px;
+  width:100px;
+  height:20px;
+  background-color: black;
+  color:white;
+  margin-top: -123px;
+  font-size: 12px;
+  align-content: center;
+}
+
+.hero-damage
+{
+  position: relative;
+  top:0;
+  left:-3px;
+  width:100px;
+  height:20px;
+  background-color: navy;
+  color:white;
+  margin-top: 104px;
+  font-size: 12px;
+  align-content: center;
+}
+
+
+/* Start Enemy Section */
+.enemy-hud-div
+{
+  border: none;
+  height:200px;
+  width:680px;
+  padding-bottom:60px;
+}
+
+
+.enemy-div
+{
+    float: left;
+    width: 94px;
+    height: 94px;
+    margin: 6px;
+    border: 3px solid red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enemy-div img{
+  height:94px;
+  width:94px;
+  padding-right:0px;
+ }
+
+.enemy-p
+{
+  position: relative;
+  top:0;
+  left:-3px;
+  width:100px;
+  height:20px;
+  background-color: red;
+  color:black;
+  margin-top: -123px;
+  font-size: 12px;
+  align-content: center;
+}
+
+.enemy-damage
+{
+  position: relative;
+  top:0;
+  left:-3px;
+  width:100px;
+  height:20px;
+  background-color: red;
+  color:black;
+  margin-top: 104px;
+  font-size: 12px;
+  align-content: center;
+}
+
+
+
+
+/* Battle Arena Section */
+.battlefield-hud-div
+{
+  border: none;
+  height:200px;
+  width:680px;
+  padding-bottom:60px;
+  position: relative;
+}
+
+.attackImg{
+  position: absolute;
+  height:80px;
+  width:80px;
+  top: 0px;
+  left: 0px;
+  padding-right:0px;
+  
+}
+/*
+.defender-div
+{
+    position: absolute;
+    float: left;
+    width: 680px; 
+    height: 200px;
+    margin: 3px; 
+    border: none;
+    text-align: center;
+    top: 475px;
+    left: 84px;  
+}
+*/
+.defender-div
+{
+    position: absolute;
+    float: left;
+    width: 580px; /*was 130*/
+    height: 170px; /*was 94*/
+    margin: 3px; 
+    border: none;
+    text-align: center;
+    top: 70px;
+    left:87px;  
+}
+
+.defender-div img{
+  height:94px;
+  width:94px;
+  padding-right:0px;
+
+  position: absolute;
+  top: 16px;
+  left:3px; 
+
+ }
+
+.defender-p
+{
+  position: absolute;
+  top:-20px;
+  left:15px;
+  width:100px;
+  height:15px;
+  background-color: red;
+  color:black;
+  /*margin-top: 95px;*/
+  font-size: 12px;
+  text-align: center;
+  z-index: 5;
+}
+
+.defender-damage
+{
+  position: relative;
+  top:94px; 
+  left:15px;
+  width:100px;
+  height:15px;
+  background-color: red;
+  color:black;
+  font-size: 12px;
+  align-content: center;
+}
+.action-text-p
+{
+  position: absolute;
+  top:-10px;
+  left:180px;
+  width:210px;
+  height:80px;
+  background-color: black;
+  color:white;
+  font-size: 16px;
+  text-align: left;
+}
+
+/*
+.defender-p
+{
+  position: relative;
+  top:10px;
+  left:15px;
+  width:100px;
+  height:15px;
+  background-color: red;
+  color:black;
+  margin-top: 95px;
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+.action-text-p
+{
+  position: relative;
+  top:10px;
+  left:90px;
+  width:300px;
+  height:80px;
+  background-color: black;
+  color:white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.defender-damage
+{
+  position: relative;
+  top:0px; 
+  left:15px;
+  width:100px;
+  height:15px;
+  background-color: red;
+  color:black;
+  font-size: 12px;
+  align-content: center;
+}
+*/
+
+/* Supporting features (i.e. logos, boxes, etc.) */
+
+
+.logo-div{
+  position:absolute;
+  width:330px;
+  height:220px;
+  top:5px;
+  right:15px;
+  float: right;
+}
+
+
+.logo-div img{
+   height:320px;
+   width:222px;
+}
+
+.center {
+   text-align: center;
+}
+
+.float {
+  
+  float: left;
+}
